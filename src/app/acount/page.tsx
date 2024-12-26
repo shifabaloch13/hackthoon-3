@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-export default function About() {
+import React from 'react'
+import Image from 'next/image'
+export default function Acount() {
   return (
     <main className="w-full">
      
@@ -8,13 +8,13 @@ export default function About() {
         className="w-full h-[500px] bg-cover bg-center flex items-center justify-center px-4 sm:px-8 md:px-16 lg:px-32"
         style={{ backgroundImage: "url(/shop-page.png)" }}
       >
-        <div className="text-center text-white">
+         <div className="mt-16">
           <Image
             src="/llogo-shop.png"
-            alt="logo"
-            className="w-24 h-24 mx-auto mb-4"
-            width={300}
-            height={250}
+            alt="logo-image"
+            className="w-24 h-24 ml-7 mt-8"
+            height={96}
+            width={96}
           />
           <h1 className="text-4xl md:text-6xl text-black font-semibold">My Account</h1>
           <div className="flex justify-center gap-4 mt-4 text-black">
@@ -131,3 +131,6 @@ export default function About() {
     </main>
   );
 }
+
+  
+

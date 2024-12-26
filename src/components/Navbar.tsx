@@ -1,5 +1,5 @@
-'use client'
 
+'use client'
 import { useState, useEffect } from 'react'
 import Link from "next/link"
 import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react'
@@ -41,9 +41,7 @@ export function Navbar() {
         </div>
       </div>
       <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-          isOpen ? "max-h-96" : "max-h-0"
-        }`}
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-96" : "max-h-0"}`}
       >
         <div className="pt-4 pb-2 space-y-2 text-center">
           <NavLinks mobile />
@@ -66,8 +64,8 @@ function NavLinks({ mobile = false }: { mobile?: boolean }) {
       <Link className={linkClass} href="/shop">
         Shop
       </Link>
-      <Link className={linkClass} href="/about">
-        About
+      <Link className={linkClass} href="/blog">
+        blog
       </Link>
       <Link className={linkClass} href="/contact">
         Contact
@@ -80,8 +78,10 @@ function NavIcons() {
   return (
     <>
       <button className="p-2">
+      <Link href="/acount" className="p-2">
         <User className="h-5 w-5" />
         <span className="sr-only">Account</span>
+        </Link>
       </button>
       <button className="p-2">
         <Search className="h-5 w-5" />
@@ -91,10 +91,14 @@ function NavIcons() {
         <Heart className="h-5 w-5" />
         <span className="sr-only">Wishlist</span>
       </button>
-      <button className="p-2">
+      <Link href="/cart" className="p-2">
         <ShoppingCart className="h-5 w-5" />
         <span className="sr-only">Cart</span>
-      </button>
+      </Link>
     </>
   )
 }
+
+
+
+
