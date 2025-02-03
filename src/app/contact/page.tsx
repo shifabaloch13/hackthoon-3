@@ -3,6 +3,7 @@ import { IoLocation } from "react-icons/io5";
 import { MdPhone } from "react-icons/md";
 import { GoClockFill } from "react-icons/go";
 import Image from "next/image";
+import Fields from "@/components/fields";
 export default function Contact() {
   return (
     <main className="w-full">
@@ -131,30 +132,7 @@ export default function Contact() {
           </form>
         </div>
       </div>
-
-     
-      <div className="w-full bg-pink-50 py-12 px-4 md:px-16 lg:px-32">
-        <div className="flex flex-col md:flex-row justify-between gap-8 text-center md:text-left">
-          <div>
-            <h1 className="font-semibold text-xl md:text-2xl">Free Delivery</h1>
-            <p className="text-gray-500 mt-2">
-              For all orders $50 consecutor <br /> adipim scing elit
-            </p>
-          </div>
-          <div>
-            <h1 className="font-semibold text-xl md:text-2xl">90 Days Return</h1>
-            <p className="text-gray-500 mt-2">
-              If good have problem consecutor <br /> adipim scing elit
-            </p>
-          </div>
-          <div>
-            <h1 className="font-semibold text-xl md:text-2xl">Secure Payment</h1>
-            <p className="text-gray-500 mt-2">
-              100% sure payment <br /> consecutor adipim scing elit
-            </p>
-          </div>
-        </div>
-      </div>
+      <Fields/>
     </main>
   );
 }
